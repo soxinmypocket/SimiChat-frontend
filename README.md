@@ -11,19 +11,19 @@ Installation
 
 Tech Stack
 --------------- 
--Javascript
--React.js
--Ruby on Rails API
--PostgreSQL
--CSS
+- Javascript
+- React.js
+- Ruby on Rails API
+- PostgreSQL
+- CSS
 
 Tools Used
 --------------- 
--React Router
--ActiveModelSerializers
--bcrypt-ruby
--JWT
--NYC Open Data API
--react-simpl-chatbot
--Mapbox
--Google Maps API
+- React Router
+- ActiveModelSerializers
+- bcrypt-ruby
+- JWT
+- NYC Open Data API
+- react-simpl-chatbot
+- Mapbox
+- Google Maps API
