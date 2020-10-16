@@ -1,3 +1,8 @@
+SimiChat
+An emotional support tool that addresses many of today's mental health challenges including generalized anxiety and depression to specific conditions like sadness and sleep deprevation.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
