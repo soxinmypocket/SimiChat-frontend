@@ -1,7 +1,7 @@
 SimiChat
 =============
 ![Simichat Banner]
-(https://github.com/soxinmypocket/SimiChat/assets/Banner.png)
+(https://github.com/soxinmypocket/SimiChat/src/assets/Banner.png)
 
 SimiChat is a therapy chat app where users can access a NYC mental health resource database and chat with a cognitive behavioral
 therapy chatbot. 
