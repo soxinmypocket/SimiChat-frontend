@@ -32,7 +32,6 @@ class Profile extends React.Component {
     const { username } = this.props.currentUser
 
     return (
-
       <form onSubmit={this.handleSubmit}>
         <h1>{username}'s Profile</h1>
 
