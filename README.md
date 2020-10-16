@@ -24,7 +24,7 @@ Tools Used
 - ActiveModelSerializers
 - bcrypt-ruby
 - JWT
-- NYC Open Data API
-- react-simpl-chatbot
+- NYC Open Data API 
+- react-simpe-chatbot
 - Mapbox
 - Google Maps API

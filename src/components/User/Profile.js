@@ -32,6 +32,7 @@ class Profile extends React.Component {
     const { username } = this.props.currentUser
 
     return (
+
       <form onSubmit={this.handleSubmit}>
         <h1>{username}'s Profile</h1>
 
@@ -43,7 +44,7 @@ class Profile extends React.Component {
           value={avatar}
           onChange={this.handleChange}
         />
-        {/* <img src={avatar.length ? avatar : "https://cdn.iconscout.com/icon/free/png-512/account-profile-avatar-man-circle-round-user-30452.png"} alt={username} /> */}
+        <img src={avatar} />
 
         <label>Bio</label>
         <textarea
@@ -54,6 +55,7 @@ class Profile extends React.Component {
 
         <input type="submit" value="Update" />
       </form>
+      
     )
   }
 }

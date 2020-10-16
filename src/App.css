@@ -1,6 +1,8 @@
 html {
   font-size: 16px;
   font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  background: rgb(206,224,231);
+  background-image: url(assets/pexels-johannes-plenio-1103970.jpg);
 }
 body {
   background-color: #efefef;
@@ -12,6 +14,8 @@ body {
 
 .App {
   text-align: center;
+  background: rgb(206,224,231);
+  background-image: url(assets/pexels-johannes-plenio-1103970.jpg)
 }
 
 #header {
@@ -329,30 +333,6 @@ li{
   list-style: none;
 }
 
-#heading {
-  background: red;
-  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.category {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: .5em 1em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
 
 #custom-burger{
   text-align: center;
@@ -386,10 +366,40 @@ input[type=submit].submit , .submit {
   background: rgb(255, 255, 255);
 }
 .centercontainer {
-  background: teal;
+  /* background: teal; */
+  /* text-align: center; */
 }
+
+/* Pagnation */
+.pagnation {
+  display: flex;
+    padding-left: 20%;
+    list-style: none;
+    border-radius: .25rem;
+}
+.page-link {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #000000;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #4CAF50;
+  border-color: #4CAF;
+}
+
+
+
+
 .chatcontainer {
-  background-color: rgb(231, 231, 253);
+  background-color: rgb(206,224,231);
+  
 
 }
 
@@ -403,7 +413,7 @@ input[type=submit].submit , .submit {
   width:800px;
 }
 .home-hero {
-  background-image: url(./assets/Untitled\ design.png);
+   /* background-image: url(./assets/Untitled\ design.png); */
   background-size: cover;
   background-color: #646eac;
   text-align: center;
@@ -422,25 +432,22 @@ input[type=submit].submit , .submit {
   list-style-type: disc;
 
 }
-.homecontainer {
-  /* background: rgb(255, 255, 255); */
-  /* opacity: 0.2; */
-}
 
 .infinite {
-  background: #daeff9;
+  background: rgb(129,169,169);
   height: 700px;
   width: 100%;
   overflow: scroll;
 }
 form {
-  background-color: #9ed1a5;
-  border: 1px solid rgb(255, 215, 210);
+  background-color: #e7eaeb;
+  border: 10px solid rgb(69,130,141);
   display: flex;
   flex-direction: column;
   width: 400px;
   margin: 0 auto;
   padding: 0 1rem 1rem;
+  z-index: 5;
 }
 
 form input {
@@ -449,6 +456,9 @@ form input {
 
 form input[type="submit"] {
   width: 40%;
+  border-radius: 25px;
+  background: white;
+  text-align: center;
 }
 
 form img {

@@ -28,7 +28,7 @@ class App extends React.Component {
 
 //Get centers from NYC Open Access API
 componentDidMount(){
-  fetch(`${process.env.REACT_APP_API_URL}$$app_token=${process.env.REACT_APP_API_KEY}`)  
+  fetch(`${process.env.REACT_APP_API_URL}$limit=4&$$app_token=${process.env.REACT_APP_API_KEY}`)  
   .then(r => r.json())
   .then(centers => {
     this.setState({
@@ -66,7 +66,9 @@ render(){
     <div className="App">
       <NavBar/>
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route exact path="/">
+          <SignUp handleLogin={this.handleLogin} />
+        </Route>
       
 
         <Route path="/centers" render={routerProps => 

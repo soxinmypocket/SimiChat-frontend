@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Center from '../components/Center';
 import CenterSort from '../components/CenterSort';
+import Pagnation from '../components/Pagnation';
 // import Pager from '../components/Pager'
 // import Geolocation from '../components/Geolocation';
 
@@ -13,19 +14,17 @@ class CenterContainer extends Component {
   return (
   <> 
   <br></br>
-  <CenterSort 
-   
-  /> 
-  <br></br>
-  <div className="infinite"> 
-    <div >
-      <div >
+  <div className="centercontainer">
+    <CenterSort />
+    <div>
         {
           this.props.centers.map(center => <Center key={center.id} center={center} slug={center.slug}/>)
         }
       </div>
+      <div className="pagnation">
+      <Pagnation />
+      </div>
     </div>
-  </div> 
   
   {/* <Geolocation center={this.props.centers} /> */}
   {/* {
