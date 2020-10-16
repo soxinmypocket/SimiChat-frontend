@@ -1,21 +1,16 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom'
-
-class ProfileContainer extends React.Component {
 
 
-  render(){
-    return(
+const ProfileContainer = () =>  {
+  console.log("hi")
+    return (
         <div>
             <h1>
-                hi
+                Profile Container
             </h1>
         </div>
-
-     )
-   }
+    )
 }
 
- 
 
-export default withRouter(ProfileContainer);
+export default ProfileContainer;

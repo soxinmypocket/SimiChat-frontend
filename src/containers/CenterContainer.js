@@ -1,69 +1,38 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
 import Center from '../components/Center';
-import ViewCenterModal from '../components/ViewCenterModal';
 import CenterSort from '../components/CenterSort';
-import OrderContainer from '../containers/OrderContainer';
+// import Pager from '../components/Pager'
+// import Geolocation from '../components/Geolocation';
+
 
 
 class CenterContainer extends Component {
-  state = {
-    selectedCategory: "BROOKLYN",
-    centers: [],
-  }
+
+  render() {
+   
+  return (
+  <> 
+  <br></br>
+  <CenterSort 
+   
+  /> 
+  <br></br>
+  <div className="infinite"> 
+    <div >
+      <div >
+        {
+          this.props.centers.map(center => <Center key={center.id} center={center} slug={center.slug}/>)
+        }
+      </div>
+    </div>
+  </div> 
   
-
-  // event handlers
-  // setSelectedCategory = newCategory => {
-  //   this.setState({
-  //     selectedCategory: newCategory,
-  //     currentIndex: 0
-  //   })
-  // }
-
-
-  getFilteredCenters() {
-    return this.props.centers
-    .filter(center =>
-      // filter by category
-      this.state.selectedCategory === "All" || center.category === this.state.selectedCategory
-    )
-    }
-
-    //Open Modal
-  
-  
-    
-
-    render() {
-      return (
-        <>
-        
-          {/* <CenterSort
-            selectedCategory={this.state.selectedCategory}
-            onCategoryChange={this.setSelectedCategory}
-          /> */}
-          
-
-        <div className="menu">
-          <OrderContainer />
-
-          <div id="burger-menu">
-            {
-              this.props.centers.map(center => <Center key={center.id} center={center} slug={center.slug}/>)
-            }
-            
-
-          </div>
-        </div>
-        
-        </>
-      );
-    }
-  
+  {/* <Geolocation center={this.props.centers} /> */}
+  {/* {
+    this.props.centers.map(location => <Geolocation  key={location.id} center={location} slug={location.slug}/>)
+  } */}
+  </>
+  )} 
 }
-
-
 export default CenterContainer;
-
 

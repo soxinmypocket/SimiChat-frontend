@@ -4,6 +4,7 @@ html {
 }
 body {
   background-color: #efefef;
+  height: 100%;
 }
 * {
   box-sizing: border-box;
@@ -24,10 +25,10 @@ body {
   font-size: 5rem;
 }
 
-form {
+ /* form {
   text-align: center;
   margin-top: 3rem;
-}
+} 
 
 label {
   font-size: 1.5rem;
@@ -42,7 +43,7 @@ input[type="submit"].auth {
   width: 10rem;
   margin-top: 2rem;
   height: 1.5rem;
-}
+}  */
 
 ol {
   width: 50%;
@@ -84,28 +85,19 @@ ul.nav li a:hover {
   background-color: #111;
 }
 
-//
+
 
 #burger-menu {
-  display: grid;
-  padding: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  text-align: center;
-}
+  display: grid; 
+   padding: 1rem; 
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-gap: 1rem; 
+   text-align: center;
+} 
 
-#ordersDiv {
-  text-align: center;
-}
-
-.deleteButton{
-  display: block;
-  margin: auto;
-  width: 50%;
-}
 
 .burger {
-  display: grid;
+  /* display: grid; */
 }
 
 .burger .button {
@@ -166,7 +158,7 @@ img {
   grid-area: m;
 }
 .menu {
-  grid-area: c;
+  grid-area: a;
 }
 
 .custom {
@@ -390,5 +382,75 @@ input[type=submit].submit , .submit {
   grid-area: m;
 }
 .menu {
-  grid-area: c;
+  grid-area: a;
+  background: rgb(255, 255, 255);
+}
+.centercontainer {
+  background: teal;
+}
+.chatcontainer {
+  background-color: rgb(231, 231, 253);
+
+}
+
+.rsc {
+  height: 800px;
+  width: 800px;
+  background: white;
+}
+.sc-iqAbSa kubccn rsc-header {
+  height:800px;
+  width:800px;
+}
+.home-hero {
+  background-image: url(./assets/Untitled\ design.png);
+  background-size: cover;
+  background-color: #646eac;
+  text-align: center;
+  height: 100%;
+}
+#eInfgr {
+  width: 800px;
+}
+.formcontainer{
+  background: rgb(223, 211, 223);
+  padding: 100px;
+}
+.cardcontainer{
+  padding-right: 200px; 
+  padding-left: 200px;
+  list-style-type: disc;
+
+}
+.homecontainer {
+  /* background: rgb(255, 255, 255); */
+  /* opacity: 0.2; */
+}
+
+.infinite {
+  background: #daeff9;
+  height: 700px;
+  width: 100%;
+  overflow: scroll;
+}
+form {
+  background-color: #9ed1a5;
+  border: 1px solid rgb(255, 215, 210);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+}
+
+form input {
+  margin: 0.25rem 0;
+}
+
+form input[type="submit"] {
+  width: 40%;
+}
+
+form img {
+  width: 150px;
 }

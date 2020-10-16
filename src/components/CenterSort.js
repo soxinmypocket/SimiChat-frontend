@@ -1,20 +1,46 @@
 import React, { Component } from 'react';
+import Dropdown from 'react-bootstrap/Dropdown'
+
 
 export default class CenterSort extends Component {
   render() {
-    const {handleSelectedCity, cities} = this.props
+    // const {handleSelectedCity, cities} = this.props
     return (
-      <div>
-          <select onChange={(e) => handleSelectedCity(e.target.value)}>
-              <option value="all">All</option>
-              {
-                cities.map(city => <option key={city} value={city}>{city}</option>)
-              }
-          </select>
-      </div>
+      <Dropdown>
+      <Dropdown.Toggle variant="light" id="dropdown-basic">
+        Select Borough
+      </Dropdown.Toggle>
+    
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Brooklyn</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Bronx</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Manhattan</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Queens</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Staten Island</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+
     );
   }
 }
+
+// export default class CenterSort extends Component {
+//   render() {
+//     const {handleSelectedCity, cities} = this.props
+//     return (
+//       <div>
+//           <select onChange={(e) => handleSelectedCity(e.target.value)}>
+//               <option value="all">All</option>
+//               {
+//                 cities.map(city => <option key={city} value={city}>{city}</option>)
+//               }
+//           </select>
+//       </div>
+//     );
+//   }
+// }
+
+
 // class CenterSort extends React.Component {
 
 //   render() {
@@ -35,4 +61,4 @@ export default class CenterSort extends Component {
 //   }
 // }
 
-// export default withRouter(CenterSort)
+// export default CenterSort
